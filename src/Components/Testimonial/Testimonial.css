@@ -1,0 +1,20 @@
+.testimonial{
+    width: 100%;
+    padding: 6.944vw 3vw;
+}
+.testimoniaContainer{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    /* width: 86.111vw; */
+}
+.cardGap{
+    row-gap: 2.083vw;
+    column-gap: 3.472vw;
+}
+.mb-111{
+    margin-top: 3.472vw;
+}
+.mb-111{
+    margin-bottom: 7.708vw;
+}

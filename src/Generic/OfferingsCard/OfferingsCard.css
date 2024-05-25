@@ -1,0 +1,81 @@
+.OfferingCardContainer {
+  width: 26.944vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 1.181vw;
+  box-shadow: 0px 4px 5px gray;
+  /* height: 45.069vw; */
+  height: auto;
+}
+.OfferingIcon {
+  width: 4.861vw;
+  height: 4.861vh;
+  padding: 5.694vw 0;
+}
+.OfferingIcon img {
+  width: 4.861vw;
+}
+.OfferingTitle {
+  padding: 2.813vw 1.042vw 0 1.042vw;
+  text-align: center;
+}
+.OfferingData {
+  padding: 1.875vw 1.736vw 2.813vw 1.736vw;
+}
+
+@media screen and (max-width: 320px) {
+  .OfferingCardContainer {
+    width: 25rem;
+    gap: 1rem;
+    padding: 1rem 0rem;
+    height: auto;
+  }
+  .OfferingIcon img {
+    width: 3.67rem;
+    margin-top: 1.5rem;
+  }
+  .OfferingTitle {
+    font-size: 2rem;
+  }
+  .OfferingData {
+    padding: 1rem 1rem;
+  }
+}
+
+@media screen and (min-width: 321px) and (max-width: 480px) {
+  .OfferingCardContainer {
+    width: 25rem;
+    gap: 1rem;
+    padding: 1rem 0rem;
+    height: auto;
+  }
+  .OfferingIcon img {
+    width: 3.67rem;
+    margin-top: 1.5rem;
+  }
+  .OfferingTitle {
+    font-size: 2rem;
+  }
+  .OfferingData {
+    padding: 1rem 1rem;
+  }
+}
+@media screen and (min-width: 481px) and (max-width: 786px) {
+  .OfferingCardContainer {
+    width: 25rem;
+    gap: 1rem;
+    padding: 1rem 0rem;
+    height: auto;
+  }
+  .OfferingIcon img {
+    width: 3.67rem;
+    margin-top: 1.5rem;
+  }
+  .OfferingTitle {
+    font-size: 2rem;
+  }
+  .OfferingData {
+    padding: 1rem 1rem;
+  }
+}

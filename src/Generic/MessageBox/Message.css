@@ -1,0 +1,53 @@
+.msgContainer {
+  width: 64.722vw;
+  background-color: #08052f;
+  padding: 2.708vw 5vw;
+  border-radius: 3.472vw;
+  border-top-left-radius: 0px;
+}
+.msgTitle {
+  color: white;
+  font-size: 1.944vw;
+  font-weight: bold;
+}
+.msgText {
+  width: 54.722vw;
+  font-size: 1.25vw;
+  font-weight: normal;
+  color: white;
+  margin-top: 1.667vw;
+}
+@media screen and (max-width: 320px) {
+  .msgTitle >p {
+    font-size: 1.56rem;
+  }
+  .msgText >p{
+    font-size: 1.25rem;
+  }
+  .msgContainer {
+  width: 100%;
+}
+}
+
+@media screen and (min-width: 321px) and (max-width: 480px) {
+  .msgTitle >p {
+    font-size: 1.56rem;
+  }
+  .msgText >p{
+    font-size: 1.25rem;
+  }
+  .msgContainer {
+  width: 100%;
+}
+}
+@media screen and (min-width: 481px) and (max-width: 786px) {
+  .msgTitle >p {
+    font-size: 1.56rem;
+  }
+  .msgText >p{
+    font-size: 1.25;
+  }
+  .msgContainer {
+  width: 100%;
+}
+}

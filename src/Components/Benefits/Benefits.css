@@ -1,0 +1,16 @@
+.BenefitsContainer {
+  background-color: #2e354b;
+  padding: 6.528vw 0;
+}
+.BenefitsHeading {
+  padding: 0 0 3.472vw 0;
+}
+@media screen and (max-width: 786px) {
+  .BenefitsBody {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* justify-content: center; */
+    gap: 1.2rem;
+  }
+}

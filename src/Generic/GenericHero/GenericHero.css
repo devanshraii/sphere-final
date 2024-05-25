@@ -1,0 +1,36 @@
+.hero-container {
+  width: 98.7vw;
+  height: 54.583vw;
+  overflow: hidden;
+}
+.hero-title {
+  width: 100%;
+  padding: 0 1rem;
+  text-align: left;
+}
+.mt-80 {
+  margin-top: 5.556vw;
+}
+.gap24 {
+  gap: 1.667vw;
+}
+
+@media screen and (max-width: 786px) {
+  .main-btn {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    padding-bottom: 1.5rem;
+  }
+  .hero-container {
+    height: 100%;
+    padding: 1rem !important;
+    overflow: hidden;
+  }
+  .hero-title {
+    font-size: 2rem !important;
+    align-items: center;
+    text-align: center;
+    margin-top: -3vh;
+  }
+}

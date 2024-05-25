@@ -1,0 +1,64 @@
+.ProcessCardContainer {
+  background-color: #08052f;
+  width: 98.7vw;
+  padding: 3.72vw 0vw 2.639vw 0vw;
+}
+
+.processHeadingContainer {
+  color: white;
+  margin-bottom: 4.097vw;
+}
+.processText {
+  width: 85vw;
+  margin: auto;
+  margin-top: 1rem;
+  text-align: center;
+}
+.descriptionText {
+  /* font-size: 18px; */
+  color: #e6e6e6;
+}
+.imgContainerDiv {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.imgOuter img {
+  /* border: 5px dashed white; */
+  /* border-radius: 50% */
+  width: 73.958vw;
+}
+/* .img{
+    padding: 20px;
+    height: 38.608vw;
+    width: 38.608vw;
+} */
+.conatainerInner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+@media screen and (max-width: 786px) {
+  .imgOuter img {
+    /* border: 5px dashed white; */
+    /* border-radius: 50% */
+    /* width: 73.958vw; */
+    /* max-width: 100%;
+    height: auto; */
+    width: 95vw;
+  }
+  .ProcessCardContainer{
+    padding: 2rem 0;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    height: 100%;
+}
+.descriptionText.text {
+  font-size: 1rem;
+  display: flex;
+  justify-content: center; 
+  align-items: center; 
+  text-align: center; 
+}
+}

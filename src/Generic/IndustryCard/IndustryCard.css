@@ -1,0 +1,57 @@
+.industryCard {
+  width: 21.244vw;
+  /* border: 1px solid blue; */
+}
+.industryIcon {
+  padding: 2.569vw 7.917vw;
+  border: 0.113vw solid white;
+}
+.industryIcon img {
+  width: 5.417vw;
+}
+
+.industryIcon:hover {
+  border-top-left-radius: 6.944vw;
+  border-bottom-right-radius: 6.944vw;
+  border: 0.113vw solid #5d2ede;
+  /* border-color: #5D2EDE; */
+}
+.iconTitle {
+  font-size: 1.667vw;
+  font-weight: bold;
+  margin-top: 1.111vw;
+}
+@media screen and (max-width: 320px) {
+  .industryIcon img {
+    width: 3rem;
+  }
+  .iconTitle {
+    font-size: 1.25rem;
+  }
+  .industryCard{
+    width:10rem;
+  }
+}
+
+@media screen and (min-width: 321px) and (max-width: 480px) {
+  .industryIcon img {
+    width: 3.5rem;
+  }
+  .iconTitle {
+    font-size: 1.25rem;
+  }
+  .industryCard{
+    width: 10rem;
+  }
+}
+@media screen and (min-width: 481px) and (max-width: 786px) {
+  .industryIcon img {
+    width: 3.5rem;
+  }
+  .iconTitle {
+    font-size: 1.25rem;
+  }
+  .industryCard{
+    width: 10rem;
+  }
+}

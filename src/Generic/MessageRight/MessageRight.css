@@ -1,0 +1,32 @@
+.msgRightContainer {
+  width: 64.722vw;
+  background-color: #08052f;
+  padding: 2.708vw 5vw;
+  border-radius: 3.472vw;
+  border-bottom-left-radius: 0px;
+}
+.msgTitle {
+  color: white;
+  font-size: 1.944vw;
+  font-weight: bold;
+}
+.msgText {
+  width: 54.722vw;
+  font-size: 1.25vw;
+  font-weight: normal;
+  color: white;
+  margin-top: 1.667vw;
+}
+@media screen and (max-width: 786px) {
+  .msgRightContainer {
+    width: 100%;
+  }
+  .msgTitle {
+    font-size: 2rem;
+    width: 100%;
+  }
+  .msgText{
+    font-size: 1.125rem;
+    width: 100%;
+  }
+}

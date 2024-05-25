@@ -1,0 +1,26 @@
+.descriptionColor{
+    color: #747474;
+}
+.list{
+    width: 98vw;
+    gap: 1.667vw;
+}
+@media screen and (max-width: 320px) {
+    .list{
+        width: 98vw;
+        gap: 1.667vw;
+    }
+  }
+  
+  @media screen and (min-width: 321px) and (max-width: 480px) {
+    .list{
+        width: 98vw;
+        gap: 1.667vw;
+    }
+  }
+  @media screen and (min-width: 481px) and (max-width: 786px) {
+    .list{
+        width: 98vw;
+        gap: 1.667vw;
+    }
+  }

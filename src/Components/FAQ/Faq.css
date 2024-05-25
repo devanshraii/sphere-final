@@ -1,0 +1,14 @@
+.faqMain{
+    padding-left: 4.583vw;
+    padding-right: 2.70vw;
+}
+.left{
+    margin-top: 4.444vw;
+    display: flex;
+    justify-content: flex-start;
+}
+.right{
+    margin-top: 4.444vw;
+    display: flex;
+    justify-content: flex-end;
+}

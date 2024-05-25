@@ -1,0 +1,261 @@
+.ContactUs {
+  background-color: #08052f;
+  padding: 6.599vw 5.077vw;
+  display: flex;
+  justify-content: space-between;
+}
+.Form {
+  width: 41.806vw;
+  background-color: #15123c;
+  border: 1px solid #66638d;
+  border-radius: 1.667vw;
+  padding: 6.111vw 3.889vw;
+}
+.Submit {
+  margin-top: 2.153vw;
+  width: 13.333vw;
+  height: 3.819vw;
+  /* background:radial-gradient(#EABFFF,#98F9FF); */
+  border-radius: 4.876vw;
+  border: 0.139vw;
+  background-image: url("../../Assets/Rectangle 1.svg");
+  background-repeat: no-repeat;
+  color: white;
+  background-size: cover;
+}
+.text-input {
+  font-family: DM Sans;
+  font-size: 1.25vw;
+  font-weight: normal;
+}
+.InputDiv {
+  margin-bottom: 1.667vw;
+  height: 3.819vw;
+}
+.TextDiv {
+  height: 9.089vw;
+  padding-top: 0.868vw;
+  align-items: flex-start;
+}
+.input-style-form {
+  width: 34.028vw;
+  border: 1px solid #66638d;
+  border-radius: 0.694vw;
+  background-color: #221f49;
+  display: flex;
+}
+input {
+  border: none;
+  background: inherit;
+  color: white;
+  outline: none;
+  width: inherit;
+  border-radius: 0.694vw;
+}
+input::placeholder {
+  color: white;
+}
+textarea {
+  border: none;
+  background: inherit;
+  outline: none;
+  color: white;
+  width: inherit;
+  height: 7vw;
+  resize: none;
+}
+textarea::placeholder {
+  color: white;
+}
+.Icon {
+  margin: 0 1.167vw;
+}
+.Detail {
+  margin-left: 7.778vw;
+}
+.heading {
+  color: white;
+  font-family: DM Sans;
+  font-size: 3.889vw;
+  font-weight: bold;
+}
+.subText {
+  margin: 1.111vw 0 2.083vw 0;
+}
+.subDetail {
+  margin-top: 1.111vw;
+}
+.SocialLinks {
+  margin-top: 3.472vw;
+}
+.Links {
+  background-color: #000000;
+  padding: 3.625vw 7.664vw;
+  justify-content: space-between;
+}
+.Links-copyright {
+  background-color: #000000;
+  padding: 3.625vw 7.664vw;
+  text-align: center;
+}
+.LogoDiv {
+  width: 23.653vw;
+}
+.linkDiv {
+  padding-top: 2.778vw;
+}
+.linkHeading {
+  padding-bottom: 2.778vw;
+}
+.anchor {
+  color: #e8e8e8;
+  font-family: DM Sans;
+  font-size: 1.25vw;
+  font-weight: normal;
+}
+.DarkIcon {
+  width: 2.5vw;
+  height: 2.5vw;
+}
+.FooterIcon {
+  width: 8.153vw;
+  height: 8.153vw;
+}
+.linkContainer {
+  width: 16.944vw;
+  display: flex;
+  gap: 1.111vw;
+}
+hr {
+  border-color: #efeafc;
+}
+
+.footerResponsive {
+  /* background-color: red; */
+  display: flex;
+  flex-wrap: wrap;
+  /* width: 100%; */
+  justify-content: center;
+  align-items: flex-start;
+  gap: 5.5vw;
+}
+.CopyRight {
+  margin-top: 2.236vw;
+}
+
+@media only screen and (max-width: 768px) {
+  .ContactUs {
+    flex-direction: column-reverse;
+    align-items: center;
+    gap: 4.861vw;
+  }
+  /* .Detail{
+        text-align: center;
+        margin-left: 0vw;
+    } */
+  .Detail {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+  .subDetail {
+    justify-content: center;
+  }
+  .SocialLinks{
+        justify-content: center;
+    }
+  .footerResponsive {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding: 0 1.5rem;
+    gap: 40px;
+    margin-top: 1rem;
+  }
+  .Links {
+    flex-direction: column-reverse;
+    align-items: center;
+    gap: 40px;
+    padding: 3.625vw 0vw;
+  }
+  .LogoDiv {
+    width: 100%;
+    text-align: center;
+  }
+  .linkDiv {
+    justify-content: center;
+  }
+  .heading {
+    font-size: 2.25rem;
+  }
+  .Form {
+    width: 100%;
+  }
+  .InputDiv {
+    margin-bottom: 0.5rem;
+    height: 2.75rem;
+  }
+  .TextDiv {
+    height: 5.75rem;
+  }
+
+  .input-style-form {
+    width: 98%;
+  }
+  .Submit {
+    margin-top: 1.5rem;
+    width: 7rem;
+    height: 3rem;
+  }
+  .text-input {
+    font-size: 1.125rem;
+  }
+  .block-main {
+    width: 9rem;
+  }
+  .anchor {
+    font-size: 1.25rem;
+  }
+  .DarkIcon {
+    width: 1.8rem;
+    height: 1.6rem;
+    margin-bottom: -1vh;
+    
+  }
+  .linkContainer {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 1.111vw;
+  }
+  .button-text {
+    font-size: 1.5rem;
+  }
+  .FooterIcon {
+    /* Adjust width and height for mobile view */
+    width: 25vw; /* Increase width for mobile */
+    height: auto; /* Maintain aspect ratio */
+  }
+}
+.ContactUs .Detail .subDetail {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px; /* Adjust as needed for spacing */
+}
+
+.ContactUs .Detail .subDetail .Icon {
+  margin-right: 10px; /* Adjust the space between icon and text */
+}
+
+.ContactUs .Detail .heading {
+  margin-top: 10px; /* Adjust this to decrease the margin above the heading */
+}
+
+.ContactUs .Detail .subDetail.flex {
+  align-items: flex-start; /* Ensures the multi-line address aligns well */
+}
+
+.ContactUs .Detail .subDetail.flex .Icon {
+  margin-top: 4px; /* Adjust to vertically center the icon with text */
+  margin-right: 10px;
+}

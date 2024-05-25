@@ -1,0 +1,62 @@
+.testimonialCard {
+  width: 25.556vw;
+  height:25vh ;
+  border-radius: 1.111vw;
+  padding: 2.153vw 3.75vw 2.153vw 1.875vw;
+}
+
+.text45 {
+  font-size: 3.125vw;
+  font-weight: bold;
+}
+.text20 {
+  font-size: 1.389vw;
+  font-weight: normal;
+}
+.icon img {
+  width: 2.5vw;
+}
+
+@media screen and (max-width: 320px) {
+  .testimonialCard {
+    width: 44.556vw;
+  }
+  .text45 {
+    font-size: 1.625rem;
+  }
+  .text20 {
+  font-size: 1.25rem;
+}
+.icon img {
+  width: 1.625rem;
+}
+}
+
+@media screen and (min-width: 321px) and (max-width: 480px) {
+  .testimonialCard {
+    width: 44.556vw;
+  }
+  .text45 {
+    font-size: 1.625rem;
+  }
+  .text20 {
+  font-size: 1.25rem;
+}
+.icon img {
+  width: 1.625rem;
+}
+}
+@media screen and (min-width: 481px) and (max-width: 786px) {
+  .testimonialCard {
+    width: 25.556vw;
+  }
+  .text45 {
+    font-size: 1.625rem;
+  }
+  .text20 {
+  font-size: 1.25rem;
+}
+.icon img {
+  width: 1.625rem;
+}
+}

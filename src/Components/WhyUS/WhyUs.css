@@ -1,0 +1,41 @@
+.whyUsContainer {
+  background-color: #08052f;
+  width: 98.7vw;
+  display: flex;
+  flex-direction: column;
+  padding-top: 2.083vw;
+  padding-bottom: 4.861vw;
+}
+.choseUsImage {
+  width: 100%;
+}
+.choose-image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 100%;
+  margin: auto;
+  height: auto;
+}
+@media screen and (max-width: 786px) {
+  .choose-image {
+    width: 100vw !important;
+  }
+  .new-image {
+    width: 80vw !important;
+  }
+  .whyUsDescription {
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+  }
+  .choseUsImage {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
+}
+/* .whyUsDescription{
+    margin-top: 1.111vw;
+    margin-bottom: 3.472vw;
+} */

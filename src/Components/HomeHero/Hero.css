@@ -1,0 +1,92 @@
+.headingContainer {
+  width: 71.321vw;
+}
+.heading-text-main {
+  font-size: 3.1rem;
+}
+.welcome-text {
+  font-size: 1rem;
+}
+
+.subHeading {
+  margin-top: 1.116vw;
+}
+.heroButton {
+  padding: 1.667vw 2.5vw;
+}
+.buttonContainer {
+  display: flex;
+  gap: 2rem;
+  margin-top: 2.5vw;
+}
+@media screen and (max-width: 320px) {
+  .heading-text-main {
+    font-size: 1.5rem;
+  }
+  .welcome-text {
+    font-size: 1.2rem;
+  }
+  .headingContainer {
+    width: 80.321vw;
+    display: flex;
+    gap: 1rem;
+  }
+  .buttonContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+}
+
+@media screen and (min-width: 321px) and (max-width: 480px) {
+  .heading-text-main {
+    font-size: 1.8rem;
+    text-align: center; 
+  }
+  .welcome-text {
+    font-size: 1.2rem;
+    text-align: center; 
+  }
+  .headingContainer {
+    width: 80.321vw;
+    display: flex;
+    gap: 1rem;
+    margin-top: -18vh;
+  }
+  .buttonContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+}
+@media screen and (min-width: 481px) and (max-width: 786px) {
+  .heading-text-main {
+    font-size: 1.5rem;
+   
+  }
+  .welcome-text {
+    font-size: 1.2rem;
+    
+  }
+  .headingContainer {
+    display: flex;
+    gap: 1rem;
+    width: 80.321vw;
+    margin-top: -2vh;
+  }
+  .buttonContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+}
+
+
+
+/* @media screen and (max-width: 786px) {
+  .hero {
+      height: 150vw !important;
+    
+      
+  }
+} */

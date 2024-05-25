@@ -1,0 +1,21 @@
+.BenefitsCardContainer{
+    width: 82.083vw;
+    border-radius: 1.181vw;
+    margin-bottom: 1.111vw;
+}
+.BenefitsCardTitle{
+    /* padding: 1.806vw 0; */
+    padding-bottom: 0.625vw;
+}
+.Content{
+    padding: 1.806vw 5.833vw;
+}
+@media screen and (max-width:786px){
+    .BenefitsCardContainer{
+        width:90%;
+        height: auto;
+    }
+    .BenefitsCardTitle{
+        text-align: center;
+    }
+}

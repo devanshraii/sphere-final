@@ -1,0 +1,77 @@
+.ServicescardContainer {
+  width: 26.944vw;
+  border-radius: 1.667vw;
+  /* border-color: #D4D2E3; */
+  border: 1px solid #d4d2e3;
+  padding: 2.986vw 2.222vw 1.667vw 2.22vw;
+  /* padding-bottom: 24px; */
+}
+.ServicescardContainer:hover {
+  background-color: #5d2ede;
+  color: white;
+}
+.cardText {
+  margin-top: 0.556vw;
+  margin-bottom: 0.694;
+}
+.Learn-more {
+  margin: 2.778vw 0 1.667vw 0;
+}
+.arrow {
+  width: 1.25vw;
+  margin-left: 0.556vw;
+  margin-top: 0.278vw;
+}
+.service-icon {
+  width: 4.861vw;
+}
+
+@media only screen and (min-width: 481px) and (max-width: 768px) {
+  .servicesList {
+    justify-content: center;
+    gap: 6.944vw;
+  }
+  .ServicescardContainer {
+    width: 33.944vw;
+  }
+  .service-icon {
+    width: 2.957rem;
+  }
+  .arrow{
+    width: 0.9rem;
+  }
+}
+
+@media screen and (min-width: 321px) and (max-width: 480px) {
+  .servicesList {
+    justify-content: center;
+    gap: 6.944vw;
+  }
+  .ServicescardContainer {
+    width: 90vw;
+  }
+  .service-icon {
+    width: 2.557rem;
+  }
+  .arrow{
+    width: 0.9rem;
+  }
+}
+@media screen and (max-width: 320px) {
+  .servicesList {
+    justify-content: center;
+    gap: 6.944vw;
+  }
+  .ServicescardContainer {
+    width: 90vw;
+  }
+  .service-icon {
+    width: 2.457rem;
+  }
+  .arrow{
+    width: 1rem;
+  }
+}
+/* .w70 img{
+    width: 100%;
+} */

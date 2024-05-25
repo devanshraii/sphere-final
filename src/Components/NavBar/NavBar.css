@@ -1,0 +1,212 @@
+.logo {
+  display: flex;
+  align-items: center;
+}
+
+.logo img {
+  margin-right: 4px; /* Adjust this value to reduce the space between the logo and text */
+}
+
+.button-text {
+  margin: 0; /* Ensure no default margin */
+}
+
+
+.active {
+  text-decoration: none; /* Remove underline */
+}
+
+.navContainer {
+  width: 98.7vw;
+  height: 6.264vw;
+  padding-right: 7.639vw;
+  padding-left: 4.737vw;
+}
+.menu {
+  gap: 2.292vw;
+}
+.logo {
+  gap: 1.139vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.logo img {
+  /* margin-top: 0.825vw; */
+  /* height: 6.158vw;
+  width: 6.158vw; */
+  margin-top: 0.85rem;
+  height: 5.386rem;
+  width: 5.386rem;
+}
+
+@media screen and (max-width: 320px) {
+  .logo img {
+    height: 3.686rem;
+    width: 3.686rem;
+  }
+}
+
+@media screen and (min-width: 321px) and (max-width: 480px) {
+  .logo img {
+    height: 3.686rem;
+    width: 3.686rem;
+  }
+}
+@media screen and (min-width: 480px) and (max-width: 786px) {
+  .logo img {
+    height: 3.686rem;
+    width: 3.686rem;
+  }
+}
+
+.navDropDown {
+  position: absolute;
+  top: 5.5vw;
+  /* right: 540px; */
+  width: 98.7vw;
+  height: 41vw;
+  overflow-y: auto;
+  /* left: 158px; */
+  background-color: transparent;
+  /* width: 250px; */
+  /* color: black; */
+  /* padding: 3.354vw 8.472vw 2.061vw 8.472vw; */
+  z-index: 1;
+}
+.navDropDown::-webkit-scrollbar {
+  width: 6px !important;
+  display: block !important;
+}
+
+.navDropDown::-webkit-scrollbar-thumb {
+  background-color: #888 !important;
+  border-radius: 4px !important;
+}
+
+.navDropDown::-webkit-scrollbar-track {
+  background-color: #f1f1f1 !important;
+}
+.navLink {
+  color: #000;
+  text-decoration: none;
+  margin: 1.389vw 0.694vw;
+  cursor: pointer;
+}
+.subLink p {
+  margin-top: 16px;
+}
+
+.downArrow {
+  width: 0.972vw;
+}
+.LeftPanel {
+  position: absolute;
+  top: 0px;
+  z-index: 1;
+  color: #5d2ede;
+  background-color: white;
+  width: 100vw;
+  height: 100vw;
+}
+.left-panel {
+  height: 100vh; /* Full height of the viewport */
+  /* width: 250px; Width of the left panel */
+  background-color: #f0f0f0; /* Light gray background color */
+  padding: 20px; /* Padding around the content */
+}
+
+.navigation {
+  margin-top: 0.8rem;
+  /* background-color: #5d2ede; */
+  color: #000;
+  padding: 0;
+  overflow-y: auto;
+  font-size: 1.15rem;
+}
+
+.navigation ul {
+  list-style-type: none; /* Remove default list styles */
+  padding: 0.5rem 0.8rem;
+}
+
+.navigation li {
+  cursor: pointer; /* Show pointer cursor on hover */
+  padding: 10px 0;
+}
+
+.dropdown {
+  display: none; /* Initially hide dropdown menu */
+  list-style: none; /* Remove default list styles */
+  padding: 0;
+}
+
+.navigation li:hover .dropdown {
+  display: block; /* Show dropdown menu on hover */
+}
+
+.dropdown li {
+  font-size: 1.15rem;
+  padding-top: 8px;
+}
+
+.dropdown li:hover {
+  background-color: #e0e0e0; /* Light gray background color on hover */
+}
+.HamBurger {
+  display: none;
+}
+
+@media only screen and (max-width: 768px) {
+  .HamBurger {
+    display: block;
+    cursor: pointer;
+  }
+  .menu {
+    display: none;
+  }
+  .contact {
+    display: none;
+  }
+  .navContainer{
+    height: 4rem!important;
+  }
+}
+@media only screen and (min-width: 768px) {
+  .navMain {
+    position: sticky;
+    top: 0;
+    z-index: 1;
+  }
+}
+.navMain {
+  position: sticky;
+  top: 0;
+  z-index: 1;
+}
+
+.logoContainer {
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  width: 40px; /* Adjust size as needed */
+  height: 40px; /* Adjust size as needed */
+  margin-right: 10px; /* Adjust spacing as needed */
+}
+
+.logoText {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+}
+
+.navContainer {
+  background: #000;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+}
+
