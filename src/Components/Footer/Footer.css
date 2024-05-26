@@ -259,3 +259,15 @@ hr {
   margin-top: 4px; /* Adjust to vertically center the icon with text */
   margin-right: 10px;
 }
+.Submit{
+  margin-top: 2.153vw;
+  width: 13.333vw;
+  height: 3.819vw;
+  /* background:radial-gradient(#EABFFF,#98F9FF); */
+  border-radius: 4.876vw;
+  border: 0.139vw;
+  background-image: url('../../Assets/Rectangle 1.svg');
+  background-repeat: no-repeat;
+  color: white;
+  background-size: cover;
+}
