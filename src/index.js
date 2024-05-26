@@ -18,14 +18,20 @@ import Mobile from "./Screens/ServicesScreens/Mobile/Mobile";
 import Cloud from "./Screens/ServicesScreens/Cloud/Cloud";
 import Oaas from "./Screens/ServicesScreens/Oaas/Oaas";
 import Contact from "./Screens/ServicesScreens/Contact/Contact";
+import ScrollToTop from "./scrollToTop.js";
 // "predeploy": "npm run build",
 //     "deploy": "gh-pages -d build"
 // "homepage": "https://sandee2847.github.io/sphere/",
 
 const router = createBrowserRouter([
   {
-    path: "",
-    element: <App />,
+    path: "/",
+    element: (
+      <>
+        <ScrollToTop />
+        <App />
+      </>
+    ),
     children: [
       {
         path: "",
@@ -95,6 +101,8 @@ const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
     <RouterProvider router={router} />
+    <scrollToTop />
+    
   </React.StrictMode>
 );
 
