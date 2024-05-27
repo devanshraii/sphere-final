@@ -221,10 +221,18 @@ hr {
     font-size: 1.5rem;
   }
   .FooterIcon {
-    /* Adjust width and height for mobile view */
-    width: 25vw; /* Increase width for mobile */
-    height: auto; /* Maintain aspect ratio */
+    width: 50px; /* Adjust width for web */
+    height: 50px; /* Maintain aspect ratio */
   }
+  
+  /* Media query for mobile devices */
+  @media screen and (max-width: 768px) {
+    .FooterIcon {
+      width: 40px; /* Adjust width for mobile */
+      height: 40px; /* Maintain aspect ratio */
+    }
+  }
+  
 }
 .ContactUs .Detail .subDetail {
   display: flex;
@@ -248,15 +256,38 @@ hr {
   margin-top: 4px; /* Adjust to vertically center the icon with text */
   margin-right: 10px;
 }
-.Submit{
-    margin-top: 2.153vw;
-    width: 13.333vw;
-    height: 3.819vw;
-    background:radial-gradient(#EABFFF,#98F9FF); 
-    border-radius: 4.876vw;
-    border: 0.139vw;
-    background-image: url('../../Assets/Rectangle 1.svg');
-    background-repeat: no-repeat;
-    color: white;
-    background-size: cover;
+.Submit {
+  margin-top: 2.153vw;
+  width: 13.333vw;
+  height: 3.819vw;
+  background: radial-gradient(#EABFFF, #98F9FF);
+  border-radius: 4.876vw;
+  border: 0.139vw solid transparent;
+  background-image: url('../../Assets/Rectangle 1.svg');
+  background-repeat: no-repeat;
+  color: white;
+  background-size: cover;
+  background-position: center;
+}
+
+/* Adjustments for mobile screens */
+@media (max-width: 768px) {
+  .Submit {
+      margin-top: 4vw; /* Adjust as needed for mobile */
+      width: 30vw; /* Adjust as needed for mobile */
+      height: 8vw; /* Adjust as needed for mobile */
+      border-radius: 10vw; /* Adjust as needed for mobile */
+      background-size: contain; /* Ensure the background image scales properly */
+  }
+}
+
+/* Further adjustments for very small screens */
+@media (max-width: 480px) {
+  .Submit {
+      margin-top: 6vw; /* Adjust as needed for very small screens */
+      width: 40vw; /* Adjust as needed for very small screens */
+      height: 10vw; /* Adjust as needed for very small screens */
+      border-radius: 15vw; /* Adjust as needed for very small screens */
+      background-size: contain; /* Ensure the background image scales properly */
+  }
 }

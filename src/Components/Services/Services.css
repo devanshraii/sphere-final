@@ -92,3 +92,20 @@
     display: none;
   }
 }
+
+/* ServicesCard.css */
+.ServicescardContainer {
+  /* Other styles */
+  transition: all 0.3s ease;
+}
+
+.ServicescardContainer:hover .arrow {
+  filter: brightness(0) invert(1); /* Makes the arrow white */
+  transition: filter 0.3s ease;
+}
+
+.arrow {
+  width: 24px; /* Adjust size as needed */
+  height: 24px; /* Adjust size as needed */
+  transition: filter 0.3s ease;
+}

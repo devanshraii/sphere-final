@@ -116,16 +116,16 @@ function Footer() {
           <div className="heading text-white">Get in touch today</div>
           <div className="text text-white subDetail">
             <img className="Icon DarkIcon" src={Call} alt="Call Icon" />
-            Phone: +91 99880908009
+            +91 99880908009
           </div>
           <div className="text text-white subDetail">
             <img className="Icon DarkIcon" src={Mail} alt="Mail Icon" />
-            Email: info@spheretechlab.in
+            info@spheretechlab.in
           </div>
-          <div className="text text-white subDetail flex">
+          <div className="text text-white subDetail ">
             <img className="Icon DarkIcon" src={Location} alt="Location Icon" />
             <div>
-              Bhopal Address: ABC, Ram Road, Bhopal, Madhya
+              ABC, Ram Road, Bhopal, Madhya
               <br /> Pradesh, India - 765687
             </div>
           </div>
@@ -152,7 +152,7 @@ function Footer() {
               <img className="Icon FooterIcon" src={Logo} alt="Logo Icon" />
             </div>
             <div className="text-white text">
-              Sphere Tech Labs, where Innovation meets Transformation!
+              Sprint Tech Labs, where Innovation meets Transformation!
             </div>
             <div className="flex linkDiv flex-center">
               <div className="linkContainer">
@@ -178,16 +178,16 @@ function Footer() {
             <div className="text-white block-main">
               <div className="linkHeading button-text">Service</div>
               <div>
-                <a className="anchor">AI & ML Service</a>
+                <a className="anchor">AI & ML</a>
               </div>
               <div>
-                <a className="anchor">Cloud Transformation</a>
+                <a className="anchor">Cloud</a>
               </div>
               <div>
-                <a className="anchor">Data Engineering</a>
+                <a className="anchor">Data</a>
               </div>
               <div>
-                <a className="anchor">Application services</a>
+                <a className="anchor">Mobility</a>
               </div>
               <div>
                 {" "}
@@ -235,7 +235,7 @@ function Footer() {
         <div className="Links-copyright">
           <hr />
           <div className="text-white flex flex-center text CopyRight">
-            Copyright Sphere Tech Labs | All Rights Reserved 
+            Copyright Sprint Tech Labs | All Rights Reserved 
           </div>
         </div>
       </div>

@@ -9,7 +9,7 @@ import { servicesData } from '../../../Constants/Data/Data'
 function Devops() {
     const imageWidth = '44.306vw'
     const backgroundColor = '#CC9998'
-    const text = 'Streamline, Deploy, Succeed: Your DevOps partner for modern';
+    const text = 'Streamline, Deploy, Succeed: Your DevOps partner for modern services';
     const textColor = 'white';
     const backgroundColorLeft = 'white';
     const backgroundColorRight = '#CC9998';

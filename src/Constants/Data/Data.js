@@ -258,7 +258,7 @@ export const Data = {
   testimonial: [
     {
       id: 1,
-      experience: "27+",
+      experience: "3+",
       description: "years of Experience",
       icon: ExperienceIcon,
       color: "#FEBEBC",
@@ -279,15 +279,15 @@ export const Data = {
     },
     {
       id: 4,
-      experience: "32+",
+      experience: "4+",
       description: "countries where we have clients",
       icon: GreenFlag,
       color: "#BCC7FE",
     },
     {
       id: 5,
-      experience: "1000+",
-      description: "countries where we have clients",
+      experience: "70+",
+      description: "product and services delivered",
       icon: IndustryIcon,
       color: "#8EFFCF",
     },
@@ -347,7 +347,7 @@ export const Data = {
     },
     {
       id: 10,
-      title: "Pushing & Media",
+      title: "Publishing & Media",
       icon: PushingIcon,
     },
     {
@@ -959,25 +959,25 @@ export const servicesData =
           "Service": "AI Consulting and Development",
           "Description": "Our Artificial Intelligence Consulting and Development Services help catalyze business growth, integrate AI into your existing tech stack, and develop advanced AI solutions for optimizing business processes.",
           "Color": "#D9CFF4",
-          "Icon": IcAiMobileWeb
+          "Icon": IcAiConsulting
         },
         {
           "Service": "Machine Learning Development",
           "Description": "Our Machine Learning development services help you automate business processes and perform advanced data analytics. We help you deploy ML models and algorithms that process large sets of data to enable faster and smarter decision-making.",
           "Color": "#9FF5E5",
-          "Icon": IcAiConsulting
+          "Icon": IcMachineLearning
         },
         {
           "Service": "AI-Powered Mobile and Web Applications",
           "Description": "Empowering you with our future-ready AI-based mobile and web applications to offer improved and intuitive user experience. Leveraging the functionalities offered by AI, we help you better understand user behavior and provide a personalized touch to their browsing time.",
           "Color": "#FDF8CF",
-          "Icon": IcDataSupport
+          "Icon": IcAiMobileWeb
         },
         {
           "Service": "Data Support for AI/ML",
           "Description": "Accurately annotate data, including text, images, or videos to train AI/ML models for maximizing your business operations’ efficiency. Our certified experts backed by the AI & ML centres of excellence deliver superior data support with the promise of confidentiality, precision, and accuracy.",
           "Color": "#D1F7FF",
-          "Icon": IcMachineLearning
+          "Icon": IcDataSupport
         }
       ],
       "Benefits": [

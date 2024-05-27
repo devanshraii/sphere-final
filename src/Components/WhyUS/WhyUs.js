@@ -34,10 +34,7 @@ function WhyUs() {
         </div>
         <div className="description-container whyUsDescription text">
           <p>
-            Our unwavering mission persists: absolute client success. We've
-            carved our path through innovation, consistently delivering
-            excellence in the realms of technology advancement and business
-            evolution. With a relentless commitment to our clients, we continue
+            With a relentless commitment to our clients, we continue
             to redefine success by seamlessly blending technological prowess,
             ensuring every milestone achieved is a testament to our
             client-centric ethos.

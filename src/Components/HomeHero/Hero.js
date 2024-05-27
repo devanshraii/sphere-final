@@ -55,7 +55,7 @@ function Hero() {
           </p>
           <div className="subHeading button-text text-white">
             <p className="welcome-text">
-              Welcome to Sphere Tech Labs, where Innovation meets
+              Welcome to Sprint Tech Labs, where Innovation meets
               Transformation!
             </p>
           </div>
