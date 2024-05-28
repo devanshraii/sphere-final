@@ -725,7 +725,7 @@ export const Data = {
       id: 6,
       name: 'Mobility',
       route: '',
-      icon: IcMobility,
+      icon: mobilityPurple,
       subLink: [
         {
           id: 61,
