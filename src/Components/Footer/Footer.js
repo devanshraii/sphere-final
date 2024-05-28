@@ -116,11 +116,11 @@ function Footer() {
           <div className="heading text-white">Get in touch today</div>
           <div className="text text-white subDetail">
             <img className="Icon DarkIcon" src={Call} alt="Call Icon" />
-            +91 9820835484
+            +91 9820835484       
           </div>
           <div className="text text-white subDetail">
             <img className="Icon DarkIcon" src={Mail} alt="Mail Icon" />
-            hello@sprinttechlabs.com
+            hello@sprinttechlabs.com  
           </div>
           <div className="text text-white subDetail ">
             <img className="Icon DarkIcon" src={Location} alt="Location Icon" />
