@@ -2,10 +2,16 @@ import React from "react";
 import "./ServicePageHero.css";
 import Cube from "../../Assets/cube.svg";
 import Button from "../../Generic/Button/Button";
-
+import { useNavigate } from 'react-router-dom';
 const windowWidth = window.screen.width;
 
+
 function ServicePageHero() {
+  const navigate = useNavigate();
+
+  const handleRedirect = (path) => {
+    navigate(path);
+  };
   const backgroundColorLeft = "#FFFFFF";
   const backgroundColorRight = "black";
   const rightColor = "white";
@@ -28,12 +34,14 @@ function ServicePageHero() {
         </div> */}
         <div className="flex flex-center gap24 buttonContainer">
           <Button
+          onClick={() => handleRedirect('/Contact')}
             backgroundColor={backgroundColorLeft}
             color={leftColor}
             text={"Get started"}
             arrow={true}
           />
           <Button
+          onClick={() => handleRedirect('/Contact')}
             backgroundColor={backgroundColorRight}
             color={rightColor}
             text={"Talk to sales"}

@@ -9,7 +9,7 @@ import { servicesData } from '../../../Constants/Data/Data'
 function Oaas() {
     const imageWidth = '44.306vw'
     const backgroundColor = '#9966CB'
-    const text = 'Driving Digital Transformation through Customized Oaas Solutions';
+    const text = 'Driving Digital Transformation through Customized OaaS Solutions';
     const textColor = 'white';
     const backgroundColorLeft = 'white';
     const backgroundColorRight = '#9966CB';

@@ -10,7 +10,7 @@ function Testimonial() {
         Passion for <span className='focused-color'>Technology</span> & Customer <span className='focused-color'>Success</span>
       </div>
       <div className='subText text-center text gray-text mb-111 mb-111'>
-        Two Decades of a journey and many more to come
+        A long and rewarding journey and many more years to come
       </div>
       <div className='testimoniaContainer flex flex-wrap cardGap'>
         {

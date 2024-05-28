@@ -116,17 +116,17 @@ function Footer() {
           <div className="heading text-white">Get in touch today</div>
           <div className="text text-white subDetail">
             <img className="Icon DarkIcon" src={Call} alt="Call Icon" />
-            +91 99880908009
+            +91 9820835484
           </div>
           <div className="text text-white subDetail">
             <img className="Icon DarkIcon" src={Mail} alt="Mail Icon" />
-            info@spheretechlab.in
+            hello@sprinttechlabs.com
           </div>
           <div className="text text-white subDetail ">
             <img className="Icon DarkIcon" src={Location} alt="Location Icon" />
             <div>
-              ABC, Ram Road, Bhopal, Madhya
-              <br /> Pradesh, India - 765687
+              103, Satra Plaza, Sec 19D,Vashi,
+              <br />Navi Mumbai, 400703
             </div>
           </div>
           <div className="SocialLinks flex">

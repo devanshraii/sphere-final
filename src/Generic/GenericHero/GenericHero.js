@@ -3,6 +3,8 @@ import Button from "../Button/Button";
 import "./GenericHero.css";
 import LeftCube from "../../Assets/cube.gif";
 import Shade from "../../Assets/EllipseTrasformation.svg";
+import { useNavigate } from 'react-router-dom';
+
 // import LeftCube from '../../Assets/cube.gif'
 const windowWidth = window.screen.width;
 
@@ -19,7 +21,11 @@ function GenericHero({
   rightColor,
   leftColor,
 }) {
+  const navigate = useNavigate();
 
+  const handleRedirect = (path) => {
+    navigate(path);
+  };
   const [isMobileView, setIsMobileView] = useState(window.innerWidth <= 786);
 
   useEffect(() => {
@@ -65,12 +71,14 @@ function GenericHero({
         </div>
         <div className="flex flex-center gap24 mt-80 main-btn">
           <Button
+            onClick={() => handleRedirect('/Contact')}
             backgroundColor={backgroundColorLeft}
             color={leftColor}
             text={"Get started"}
             arrow={true}
           />
           <Button
+            onClick={() => handleRedirect('/Contact')}
             backgroundColor={backgroundColorRight}
             color={rightColor}
             text={"Talk to sales"}

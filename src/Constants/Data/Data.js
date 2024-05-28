@@ -61,13 +61,13 @@ import productWhite from "../../Assets/services/product engg White.svg"
 
 
 
-import Bitcoin from "../../Assets/currency 1.svg";
-import Bank from "../../Assets/currency 1 (1).svg";
-import Yellow from "../../Assets/currency 1 (2).svg";
-import Marketplace from "../../Assets/currency 1 (3).svg";
-import Exchange from "../../Assets/currency 1 (4).svg";
-import Token from "../../Assets/currency 1 (5).svg";
-import Launchpad from "../../Assets/currency 1 (6).svg";
+import bitcoinordinals from "../../Assets/blokchain icons/bitcoin ordinals.png";
+import cryptoanddigitalbanking from "../../Assets/blokchain icons/Crypto and digital banking.png";
+import dex from "../../Assets/blokchain icons/dex.png";
+import NftMarketplace from "../../Assets/blokchain icons/Nft marketplace.png";
+import cryptoexchange from "../../Assets/blokchain icons/crypto exchange.png";
+import tokenpresale from "../../Assets/blokchain icons/token presale.png";
+import tokenlaunchpad from "../../Assets/blokchain icons/token launchpad.png";
 
 // --------------- Nav icons ---------------
 import IcAiMl from '../../Assets/NavIcon/ai-mi-algorithm-svgrepo-com 1.svg';
@@ -286,7 +286,7 @@ export const Data = {
     },
     {
       id: 5,
-      experience: "70+",
+      experience: "17+",
       description: "product and services delivered",
       icon: IndustryIcon,
       color: "#8EFFCF",
@@ -359,7 +359,7 @@ export const Data = {
   offeringData: [
     {
       id: 1,
-      Icon: Bitcoin,
+      Icon: dex,
       Title: "Cryptocurrency Exchange Solution",
       Content:
         "Digital and crypto banking solutions refer to innovative financial services that leverage digital technologies and cryptocurrencies to offer efficient, secure, and accessible banking experiences. These solutions combine traditional banking services with blockchain technology and cryptocurrencies to provide a range of benefits to users.",
@@ -368,7 +368,7 @@ export const Data = {
     },
     {
       id: 2,
-      Icon: Bank,
+      Icon: cryptoanddigitalbanking,
 
       Title: "Digital & Crypto Banking Solutions",
       Content:
@@ -378,7 +378,7 @@ export const Data = {
     },
     {
       id: 3,
-      Icon: Yellow,
+      Icon: bitcoinordinals,
 
       Title: "Bitcoin Ordinals",
       Content:
@@ -388,7 +388,7 @@ export const Data = {
     },
     {
       id: 4,
-      Icon: Marketplace,
+      Icon: NftMarketplace,
 
       Title: "NFT Marketplace Solutions",
       Content:
@@ -398,7 +398,7 @@ export const Data = {
     },
     {
       id: 5,
-      Icon: Exchange,
+      Icon: cryptoexchange,
 
       Title: "Decentralized Exchange Solution",
       Content:
@@ -408,7 +408,7 @@ export const Data = {
     },
     {
       id: 6,
-      Icon: Token,
+      Icon: tokenpresale,
 
       Title: "Token Presale Solutions",
       Content:
@@ -418,7 +418,7 @@ export const Data = {
     },
     {
       id: 7,
-      Icon: Launchpad,
+      Icon: tokenlaunchpad,
 
       Title: "Token Launchpad Solution",
       Content:
@@ -758,7 +758,7 @@ export const Data = {
       id: 2,
       name: 'Hi - Tech',
       route: '',
-      icon: IcHiTec,
+      icon: HiTecIcon,
       subLink: []
     },
     {
@@ -1082,7 +1082,7 @@ export const servicesData =
         },
         {
           "Benefit": "Personal Assistants and Chatbots",
-          "Description": "Empowers the creation of more human-like",
+          "Description": "Empowers the creation of more human-like interaction",
           "Color": "#F98AA2",
         },
         {
@@ -1116,43 +1116,43 @@ export const servicesData =
           "Service": "Cryptocurrency Exchange Solution",
           "Description": " A cryptocurrency exchange solution refers to a platform or software that enables users to buy, sell, trade, and manage various cryptocurrencies. These exchanges act as intermediaries that facilitate the conversion of digital assets and provide a marketplace for users to engage in crypto trading.",
           "Color": "#D9CFF4",
-          "Icon": IcMobileProduct
+          "Icon": cryptoexchange
         },
         {
           "Service": "Digital & Crypto Banking Solutions",
           "Description": "Digital and crypto banking solutions refer to innovative financial services that leverage digital technologies and cryptocurrencies to offer efficient, secure, and accessible banking experiences. These solutions combine traditional banking services with blockchain technology and cryptocurrencies to provide a range of benefits to users.",
           "Color": "#9FF5E5",
-          "Icon": IcMobiWeb
+          "Icon": cryptoanddigitalbanking
         },
         {
           "Service": "Bitcoin Ordinals",
           "Description": "Bitcoin Ordinals are the equivalent of non-fungible tokens on the Bitcoin blockchain using satoshis, the smallest denomination on the chain. Every satoshi is given a serial number based on the order in which it was mined.",
           "Color": "#FDF8CF",
-          "Icon": IcMobiQa
+          "Icon": bitcoinordinals
         },
         {
           "Service": "Token Presale Solutions",
           "Description": "Token presale solutions refer to platforms, services, or systems that facilitate the initial offering or sale of digital tokens or cryptocurrencies to a select group of investors or contributors before the tokens are available to the general public in a token sale or initial coin offering (ICO).",
           "Color": "#D1F7FF",
-          "Icon": IcMobiModern
+          "Icon": tokenpresale
         },
         {
           "Service": "NFT Marketplace Solution",
           "Description": "An NFT (Non-Fungible Token) marketplace solution is a platform or ecosystem where users can create, buy, sell, and exchange NFTs. NFTs represent unique digital assets stored on a blockchain, certifying ownership and authenticity of digital content, such as artwork, collectibles, music, videos, virtual real estate, and more.",
           "Color": "#FFE2D1",
-          "Icon": IcMobiInti
+          "Icon": NftMarketplace
         },
         {
           "Service": "Decentralized (DEX) Exchange Solution",
           "Description": "A Decentralized Exchange (DEX) solution is a type of cryptocurrency exchange that operates without a central authority or intermediary. Unlike traditional centralized exchanges (CEX), which rely on a central entity to facilitate trading and custody of assets, DEXs use decentralized technologies, typically based on blockchain, to enable peer-to-peer trading of digital assets.",
           "Color": "#CDE2FB",
-          "Icon": IcMobiBackend
+          "Icon": cryptoexchange
         },
         {
           "Service": "Token Launchpad Solution",
           "Description": "A token launchpad solution refers to a platform or ecosystem that facilitates the launching, fundraising, and initial distribution of new cryptocurrency tokens or digital assets. These launchpad platforms serve as a launchpad for token projects, allowing them to access a broader audience of potential investors and contributors.",
           "Color": "#FEC6E1",
-          "Icon": IcMobiDev
+          "Icon": tokenlaunchpad
         }
       ],
       "Benefits": [
