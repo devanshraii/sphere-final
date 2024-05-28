@@ -12,6 +12,10 @@ function NavBar() {
   const [pannel, setPannel] = useState("");
   const [showDropdown, setShowDropdown] = useState(false);
   const [leftMenu, setLeftMenu] = useState(false);
+  const [mobileDropdown, setMobileDropdown] = useState({
+    technology: false,
+    industry: false,
+  });
 
   const toggleDropdown = () => {
     setShowDropdown(!showDropdown);
@@ -20,14 +24,18 @@ function NavBar() {
   const toggleLeft = () => {
     setLeftMenu((prev) => !prev);
     if (leftMenu) {
-      // Enable scrolling on body when panel is closed
       document.body.style.overflow = "auto";
     } else {
-      // Disable scrolling on body when panel is open
       document.body.style.overflow = "hidden";
     }
   };
-  const sername = "tecnologyDropDown";
+
+  const toggleMobileDropdown = (section) => {
+    setMobileDropdown((prev) => ({
+      ...prev,
+      [section]: !prev[section],
+    }));
+  };
 
   return (
     <div style={{ position: "sticky", top: "0", zIndex: "1" }} className="navMain">
@@ -47,9 +55,8 @@ function NavBar() {
               {showDropdown && (
                 <ul className="dropdown">
                   {Data["serviceDropDown"]
-                    .slice() // Create a shallow copy of the array to avoid mutating the original data
+                    .slice()
                     .sort((a, b) => {
-                      // Ensure ids are compared correctly even if they are strings
                       const idA = parseInt(a.id, 10);
                       const idB = parseInt(b.id, 10);
                       return idA - idB;
@@ -64,8 +71,45 @@ function NavBar() {
                 </ul>
               )}
             </li>
-            <li>Technology</li>
-            <li>Industry</li>
+            <li>
+              <div onClick={() => toggleMobileDropdown("technology")}>
+                Technology
+                <img src={DownArrow} alt="Down Arrow" style={{ width: "10px", marginLeft: "8px" }} />
+              </div>
+              {mobileDropdown.technology && (
+                <ul className="dropdown">
+                  {Data["tecnologyDropDown"].map((item) => (
+                    <li key={item.id}>
+                      <NavLink to={item.route} className="navLink" onClick={toggleLeft}>
+                        {item.name}
+                      </NavLink>
+                    </li>
+                  ))}
+                </ul>
+              )}
+            </li>
+            <li>
+              <div onClick={() => toggleMobileDropdown("industry")}>
+                Industry
+                <img src={DownArrow} alt="Down Arrow" style={{ width: "10px", marginLeft: "8px" }} />
+              </div>
+              {mobileDropdown.industry && (
+                <ul className="dropdown">
+                  {Data["industryDropDown"].map((item) => (
+                    <li key={item.id}>
+                      <NavLink to={item.route} className="navLink" onClick={toggleLeft}>
+                        {item.name}
+                      </NavLink>
+                    </li>
+                  ))}
+                </ul>
+              )}
+            </li>
+            <li>
+              <NavLink to="Contact" style={{ color: "#000" }} className="navLink" onClick={toggleLeft}>
+                Contact
+              </NavLink>
+            </li>
           </ul>
         </nav>
       </div>
@@ -130,10 +174,10 @@ function NavBar() {
           >
             <img src={DownArrow} alt="" width="15vw" />
           </div>
+          <NavLink to="Contact" style={{ textDecoration: "none", color: "white" }} onClick={() => setShowOptions(false)}>
+            Contact
+          </NavLink>
         </div>
-        <NavLink to="Contact" style={{ textDecoration: "none" }} className="whiteButton button-text contact">
-          <p>Contact</p>
-        </NavLink>
       </div>
       {showOptions && (
         <div className="navDropDown" onClick={() => setShowOptions(false)}>

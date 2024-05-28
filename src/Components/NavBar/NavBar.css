@@ -209,4 +209,55 @@
   align-items: center;
   padding: 10px 20px;
 }
+/* NavBar.css */
 
+.LeftPanel {
+  /* Existing styles */
+}
+
+.navigation ul {
+  list-style: none;
+  padding: 0;
+}
+
+.navigation li {
+  padding: 10px 0;
+}
+
+.navigation .dropdown {
+  display: none;
+}
+
+.navigation li:hover .dropdown,
+.navigation li:hover .dropdown {
+  display: block;
+}
+
+@media (max-width: 786px) {
+  .navigation .dropdown {
+    position: static;
+    background: none;
+    box-shadow: none;
+    margin-left: 20px;
+  }
+  
+  .navigation .dropdown li {
+    padding: 8px 0;
+  }
+
+  .navDropDown {
+    display: none;
+  }
+
+  .navMain .flex {
+    flex-direction: column;
+  }
+
+  .HamBurger {
+    display: block;
+  }
+
+  .menu {
+    display: none;
+  }
+}
