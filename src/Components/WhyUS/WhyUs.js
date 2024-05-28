@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import "./WhyUs.css";
-import ChooseUsImage from "../../Assets/Why choose us.svg";
+import ChooseUsImage from "../../Assets/Why choose us.png";
 import img from "../../Assets/Group 39508.png";
 
 function WhyUs() {
