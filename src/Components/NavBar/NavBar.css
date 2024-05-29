@@ -257,7 +257,7 @@
   }
 
   .navMain .flex {
-    flex-direction: column;
+    flex-direction: row;
   }
 
   .HamBurger {
