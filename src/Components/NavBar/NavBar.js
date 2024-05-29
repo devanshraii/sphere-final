@@ -74,39 +74,53 @@ function NavBar() {
             <li>
               <div onClick={() => toggleMobileDropdown("technology")}>
                 Technology
-                <img src={DownArrow} alt="Down Arrow" style={{ width: "10px", marginLeft: "8px" }} />
+                <img src={DownArrow} alt="Down Arrow" />
               </div>
               {mobileDropdown.technology && (
                 <ul className="dropdown">
-                  {Data["tecnologyDropDown"].map((item) => (
-                    <li key={item.id}>
-                      <NavLink to={item.route} className="navLink" onClick={toggleLeft}>
-                        {item.name}
-                      </NavLink>
-                    </li>
-                  ))}
+                  {Data["tecnologyDropDown"]
+                    .slice()
+                    .sort((a, b) => {
+                      const idA = parseInt(a.id, 10);
+                      const idB = parseInt(b.id, 10);
+                      return idA - idB;
+                    })
+                    .map((num) => (
+                      <li key={num.id}>
+                        <NavLink to={num.route} className="navLink" onClick={toggleLeft}>
+                          {num.name}
+                        </NavLink>
+                      </li>
+                    ))}
                 </ul>
               )}
             </li>
             <li>
               <div onClick={() => toggleMobileDropdown("industry")}>
                 Industry
-                <img src={DownArrow} alt="Down Arrow" style={{ width: "10px", marginLeft: "8px" }} />
+                <img src={DownArrow} alt="Down Arrow" />
               </div>
               {mobileDropdown.industry && (
                 <ul className="dropdown scrollable-dropdown">
-                  {Data["industryDropDown"].map((item) => (
-                    <li key={item.id}>
-                      <NavLink to={item.route} className="navLink" onClick={toggleLeft}>
-                        {item.name}
-                      </NavLink>
-                    </li>
-                  ))}
+                  {Data["industryDropDown"]
+                    .slice()
+                    .sort((a, b) => {
+                      const idA = parseInt(a.id, 10);
+                      const idB = parseInt(b.id, 10);
+                      return idA - idB;
+                    })
+                    .map((num) => (
+                      <li key={num.id}>
+                        <NavLink to={num.route} className="navLink" onClick={toggleLeft}>
+                          {num.name}
+                        </NavLink>
+                      </li>
+                    ))}
                 </ul>
               )}
             </li>
-            <li>
-              <NavLink to="Contact" style={{ color: "#000" }} className="navLink" onClick={toggleLeft}>
+            <li className="navLink contact">
+              <NavLink to="contact" style={{ color: "#000" }} onClick={toggleLeft}>
                 Contact
               </NavLink>
             </li>
@@ -174,15 +188,10 @@ function NavBar() {
           >
             <img src={DownArrow} alt="" width="15vw" />
           </div>
-          <NavLink to="Contact" style={{ textDecoration: "none", color: "white", display: windowWidth <= 786 ? "none" : "block" }} onClick={() => setShowOptions(false)}>
-            Contact
-          </NavLink>
         </div>
-        {windowWidth > 786 && (
-          <NavLink to="Contact" style={{ textDecoration: "none" }} className="whiteButton button-text contact">
-            <p>Contact</p>
-          </NavLink>
-        )}
+        <NavLink to="contact" style={{ textDecoration: "none" }} className="whiteButton button-text contact">
+          <p>Contact</p>
+        </NavLink>
       </div>
       {showOptions && (
         <div className="navDropDown" onClick={() => setShowOptions(false)}>
