@@ -125,7 +125,7 @@ function Footer() {
           <div className="text text-white subDetail ">
             <img className="Icon DarkIcon" src={Location} alt="Location Icon" />
             <div>
-              103, Satra Plaza, Sec 19D,Vashi,
+              103, Satra Plaza, Sec 19D, Vashi,
               <br />Navi Mumbai, 400703
             </div>
           </div>
