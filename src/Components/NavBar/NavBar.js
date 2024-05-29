@@ -94,7 +94,7 @@ function NavBar() {
                 <img src={DownArrow} alt="Down Arrow" style={{ width: "10px", marginLeft: "8px" }} />
               </div>
               {mobileDropdown.industry && (
-                <ul className="dropdown">
+                <ul className="dropdown scrollable-dropdown">
                   {Data["industryDropDown"].map((item) => (
                     <li key={item.id}>
                       <NavLink to={item.route} className="navLink" onClick={toggleLeft}>
@@ -212,28 +212,26 @@ function NavBar() {
                     padding: item.subLink.length && "1.111vw 0.556vw",
                     borderRadius: "0.556vw",
                   }}
-                  >
+                >
                   <img src={item.icon} alt="Icon" style={{ width: "1.667vw" }} />
                   <p>
-                  <NavLink to={item.route} style={{ color: "#000" }} className="navLink">
-                  {item.name}
-                  </NavLink>
+                    <NavLink to={item.route} style={{ color: "#000" }} className="navLink">
+                      {item.name}
+                    </NavLink>
                   </p>
-                  </div>
-                  {item.subLink.length > 0 && item.subLink.map((link, index) => (
+                </div>
+                {item.subLink.length > 0 && item.subLink.map((link, index) => (
                   <div key={index} className="subLink" style={{ paddingLeft: "3.472vw" }}>
-                  <p className="gray-text">{link.name}</p>
+                    <p className="gray-text">{link.name}</p>
                   </div>
-                  ))}
-                  </div>
-                  ))}
-                  </div>
-                  </div>
-                  )}
-                  </div>
-                  );
-                  }
-                  
-                  export default NavBar;
-                  
-                  
+                ))}
+              </div>
+            ))}
+          </div>
+        </div>
+      )}
+    </div>
+  );
+}
+
+export default NavBar;

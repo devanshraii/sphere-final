@@ -235,6 +235,11 @@
   display: block;
 }
 
+.scrollable-dropdown {
+  max-height: 200px; /* Adjust height as needed */
+  overflow-y: auto;
+}
+
 @media (max-width: 786px) {
   .navigation .dropdown {
     position: static;
