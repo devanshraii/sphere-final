@@ -1016,7 +1016,7 @@ export const servicesData =
         {
           id:3,
           question: "What are some practical applications of AI/ML in business?",
-          answer: "OaaS solutions may encompass a wide range of services, including workflow automation, strategic consulting, data analytics, IT infrastructure management, change management, performance monitoring and optimization, and customer experience enhancement, among others."
+          answer: "Practical applications of AI/ML in business include predictive analytics for demand forecasting, customer segmentation for targeted marketing campaigns, chatbots for customer support, recommendation systems for personalized product offerings, fraud detection in financial transactions, and process automation for repetitive tasks."
         },
         {
           id:4,
