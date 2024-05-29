@@ -247,7 +247,7 @@
     box-shadow: none;
     margin-left: 20px;
   }
-  
+
   .navigation .dropdown li {
     padding: 8px 0;
   }
@@ -257,7 +257,7 @@
   }
 
   .navMain .flex {
-    flex-direction: row;
+    flex-direction: column;
   }
 
   .HamBurger {
@@ -269,6 +269,16 @@
   }
 
   .whiteButton.button-text.contact {
+    display: none;
+  }
+
+  .navigation .navLink.contact {
+    display: block;
+  }
+}
+
+@media (min-width: 787px) {
+  .navigation .navLink.contact {
     display: none;
   }
 }
