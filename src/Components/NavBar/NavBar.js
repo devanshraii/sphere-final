@@ -78,7 +78,7 @@ function NavBar() {
               </div>
               {mobileDropdown.technology && (
                 <ul className="dropdown">
-                  {Data["tecnologyDropDown"].map((item) => (
+                  {Data["technologyDropDown"].map((item) => (
                     <li key={item.id}>
                       <NavLink to={item.route} className="navLink" onClick={toggleLeft}>
                         {item.name}
@@ -174,10 +174,15 @@ function NavBar() {
           >
             <img src={DownArrow} alt="" width="15vw" />
           </div>
-          <NavLink to="Contact" style={{ textDecoration: "none", color: "white" }} onClick={() => setShowOptions(false)}>
+          <NavLink to="Contact" style={{ textDecoration: "none", color: "white", display: windowWidth <= 786 ? "none" : "block" }} onClick={() => setShowOptions(false)}>
             Contact
           </NavLink>
         </div>
+        {windowWidth > 786 && (
+          <NavLink to="Contact" style={{ textDecoration: "none" }} className="whiteButton button-text contact">
+            <p>Contact</p>
+          </NavLink>
+        )}
       </div>
       {showOptions && (
         <div className="navDropDown" onClick={() => setShowOptions(false)}>
@@ -207,26 +212,28 @@ function NavBar() {
                     padding: item.subLink.length && "1.111vw 0.556vw",
                     borderRadius: "0.556vw",
                   }}
-                >
+                  >
                   <img src={item.icon} alt="Icon" style={{ width: "1.667vw" }} />
                   <p>
-                    <NavLink to={item.route} style={{ color: "#000" }} className="navLink">
-                      {item.name}
-                    </NavLink>
+                  <NavLink to={item.route} style={{ color: "#000" }} className="navLink">
+                  {item.name}
+                  </NavLink>
                   </p>
-                </div>
-                {item.subLink.length > 0 && item.subLink.map((link, index) => (
-                  <div key={index} className="subLink" style={{ paddingLeft: "3.472vw" }}>
-                    <p className="gray-text">{link.name}</p>
                   </div>
-                ))}
-              </div>
-            ))}
-          </div>
-        </div>
-      )}
-    </div>
-  );
-}
-
-export default NavBar;
+                  {item.subLink.length > 0 && item.subLink.map((link, index) => (
+                  <div key={index} className="subLink" style={{ paddingLeft: "3.472vw" }}>
+                  <p className="gray-text">{link.name}</p>
+                  </div>
+                  ))}
+                  </div>
+                  ))}
+                  </div>
+                  </div>
+                  )}
+                  </div>
+                  );
+                  }
+                  
+                  export default NavBar;
+                  
+                  

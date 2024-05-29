@@ -209,6 +209,8 @@
   align-items: center;
   padding: 10px 20px;
 }
+
+
 /* NavBar.css */
 
 .LeftPanel {
@@ -250,7 +252,7 @@
   }
 
   .navMain .flex {
-    flex-direction: row;
+    flex-direction: column;
   }
 
   .HamBurger {
@@ -258,6 +260,10 @@
   }
 
   .menu {
+    display: none;
+  }
+
+  .whiteButton.button-text.contact {
     display: none;
   }
 }
