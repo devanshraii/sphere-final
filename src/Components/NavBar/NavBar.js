@@ -78,7 +78,7 @@ function NavBar() {
               </div>
               {mobileDropdown.technology && (
                 <ul className="dropdown">
-                  {Data["technologyDropDown"].map((item) => (
+                  {Data["tecnologyDropDown"].map((item) => (
                     <li key={item.id}>
                       <NavLink to={item.route} className="navLink" onClick={toggleLeft}>
                         {item.name}
